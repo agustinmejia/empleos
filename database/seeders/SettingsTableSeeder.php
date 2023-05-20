@@ -24,7 +24,7 @@ class SettingsTableSeeder extends Seeder
                 'id' => 1,
                 'key' => 'site.title',
                 'display_name' => 'Site Title',
-                'value' => 'Empleos',
+                'value' => 'Bolsa de empleos',
                 'details' => '',
                 'type' => 'text',
                 'order' => 1,
@@ -79,7 +79,7 @@ class SettingsTableSeeder extends Seeder
                 'id' => 6,
                 'key' => 'admin.title',
                 'display_name' => 'Admin Title',
-                'value' => 'Empleos',
+                'value' => 'B.J.E.',
                 'details' => '',
                 'type' => 'text',
                 'order' => 1,
@@ -128,6 +128,17 @@ class SettingsTableSeeder extends Seeder
                 'type' => 'text',
                 'order' => 5,
                 'group' => 'Admin',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'key' => 'servers.whatsapp',
+                'display_name' => 'Whatsapp',
+                'value' => '',
+                'details' => NULL,
+                'type' => 'text',
+                'order' => 6,
+                'group' => 'Servers',
             ),
         ));
         

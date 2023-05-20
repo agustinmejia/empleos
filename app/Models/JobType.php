@@ -13,6 +13,11 @@ class JobType extends Model
     protected $fillable = [
         'name',
         'description',
+        'slug',
         'status'
     ];
+
+    public function jobs(){
+        return $this->hasMany(Job::class, 'job_type_id');
+    }
 }

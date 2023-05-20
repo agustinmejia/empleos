@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Controllers
+use App\Http\Controllers\JobApplicationsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +24,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::resource('jobapplications', JobApplicationsController::class);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

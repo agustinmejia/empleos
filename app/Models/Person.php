@@ -11,11 +11,15 @@ class Person extends Model
     use HasFactory, SoftDeletes;
     protected $dates = ['deleted_at'];
     protected $fillable = [
-        'full_name',
+        'city_id',
+        'job_id',
+        'fisrt_name',
+        'last_name',
         'dni',
+        'gender',
+        'birthday',
         'phone',
         'address',
-        'profession',
         'photo',
         'video',
         'short_description',

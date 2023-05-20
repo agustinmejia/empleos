@@ -16,7 +16,7 @@ class CreateJobApplicationsTable extends Migration
         Schema::create('job_applications', function (Blueprint $table) {
             $table->id();
             $table->foreignId('person_id')->nullable()->constrained('people');
-            $table->string('name')->nullable();
+            $table->string('type')->nullable();
             $table->text('short_description')->nullable();
             $table->text('long_description')->nullable();
             $table->smallInteger('status')->nullable()->default(1);

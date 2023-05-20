@@ -12,6 +12,7 @@ class JobApplication extends Model
     protected $dates = ['deleted_at'];
     protected $fillable = [
         'person_id',
+        'type',
         'short_description',
         'long_description',
         'status'

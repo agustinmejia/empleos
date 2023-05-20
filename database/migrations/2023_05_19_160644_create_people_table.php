@@ -16,11 +16,14 @@ class CreatePeopleTable extends Migration
         Schema::create('people', function (Blueprint $table) {
             $table->id();
             $table->foreignId('city_id')->nullable()->constrained('cities');
-            $table->string('full_name')->nullable();
+            $table->foreignId('job_id')->nullable()->constrained('jobs');
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
             $table->string('dni')->unique();
+            $table->string('gender')->nullable();
+            $table->date('birthday')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
-            $table->string('profession')->nullable();
             $table->string('photo')->nullable();
             $table->string('video')->nullable();
             $table->text('short_description')->nullable();

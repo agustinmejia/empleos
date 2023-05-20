@@ -18,6 +18,7 @@ class CreateCitiesTable extends Migration
             $table->foreignId('state_id')->nullable()->constrained('states');
             $table->string('name')->nullable();
             $table->string('slug')->unique();
+            $table->smallInteger('status')->nullable()->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

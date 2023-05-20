@@ -17,6 +17,7 @@ class CreateJobsTable extends Migration
             $table->id();
             $table->foreignId('job_type_id')->nullable()->constrained('job_types');
             $table->string('name')->nullable();
+            $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->smallInteger('status')->nullable()->default(1);
             $table->timestamps();
