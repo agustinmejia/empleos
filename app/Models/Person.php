@@ -13,7 +13,7 @@ class Person extends Model
     protected $fillable = [
         'city_id',
         'job_id',
-        'fisrt_name',
+        'first_name',
         'last_name',
         'dni',
         'gender',
@@ -24,6 +24,11 @@ class Person extends Model
         'video',
         'short_description',
         'long_description',
+        'type',
         'status'
     ];
+
+    public function comments(){
+        return $this->hasMany(Comment::class, 'foreign_key', 'local_key');
+    }
 }

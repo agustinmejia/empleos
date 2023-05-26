@@ -28,6 +28,7 @@ class CreatePeopleTable extends Migration
             $table->string('video')->nullable();
             $table->text('short_description')->nullable();
             $table->text('long_description')->nullable();
+            $table->smallInteger('type')->nullable()->default(1);
             $table->smallInteger('status')->nullable()->default(1);
             $table->timestamps();
             $table->softDeletes();

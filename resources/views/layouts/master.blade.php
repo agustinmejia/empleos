@@ -47,34 +47,31 @@
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top d-flex align-items-center">
             <div class="container d-flex align-items-center">
-
-            <div class="logo me-auto">
-                <h1><a href="{{ url('') }}"><img src="{{ $icon }}" alt="{{ setting('site.title') }}" class="img-fluid"> {{ setting('site.title') }}</a></h1>
-            </div>
-
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-                    <li class="dropdown"><a href="#"><span>Acerca de</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-                            {{-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --}}
-                            <li><a class="nav-link scrollto" href="#testimonials">Testimonios</a></li>
-                        </ul>
-                    </li>
-                    {{-- <li><a class="nav-link scrollto" href="#services">Servicio</a></li> --}}
-                    <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-            <div class="header-social-links d-flex align-items-center">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-            </div>
-
+                <div class="logo me-auto">
+                    <h1><a href="{{ url('') }}"><img src="{{ $icon }}" alt="{{ setting('site.title') }}" class="img-fluid"> <span>{{ setting('site.title') }}</span></a></h1>
+                </div>
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+                        <li class="dropdown"><a href="#"><span>Acerca de</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+                                {{-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --}}
+                                <li><a class="nav-link scrollto" href="#testimonials">Testimonios</a></li>
+                            </ul>
+                        </li>
+                        {{-- <li><a class="nav-link scrollto" href="#services">Servicio</a></li> --}}
+                        <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+                {{-- <div class="header-social-links d-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                </div> --}}
             </div>
         </header><!-- End Header -->
 
@@ -86,14 +83,13 @@
             <div class="container">
                 <div class="row">
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="footer-info">
                     <h3>Bolsa Juvenil de Empleo</h3>
                     <p>
-                        A108 Adam Street <br>
-                        NY 535022, USA<br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                        Plaza Principal Mcal. José Ballivián<br><br>
+                        <strong>Telefonos:</strong> (3)4624226 - 71121084<br>
+                        <strong>Email:</strong> despacho@beni.gob.bo<br>
                     </p>
                     <div class="social-links mt-3">
                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -105,36 +101,36 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6 footer-links">
+                <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Enlaces</h4>
                     <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{{ url('') }}">Inicio</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Acerca de</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos del servicio</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de privacidad</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Servicio</h4>
                     <ul>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{{ url('register') }}">Busqueda de empleo</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{{ url('register') }}?tab=2">Busqueda de personal</a></li>
+                    {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
                     <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                    <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> --}}
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6 footer-newsletter">
+                {{-- <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Novedades</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <p>Suscribete a nuestro boletín semana</p>
                     <form action="" method="post">
                     <input type="email" name="email"><input type="submit" value="Subscribirse">
                     </form>
 
-                </div>
+                </div> --}}
 
                 </div>
             </div>
@@ -157,6 +153,7 @@
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
         <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

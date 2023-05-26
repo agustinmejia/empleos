@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // Controllers
-use App\Http\Controllers\JobApplicationsController;
+use App\Http\Controllers\PeopleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::resource('jobapplications', JobApplicationsController::class);
+Route::resource('people', PeopleController::class);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

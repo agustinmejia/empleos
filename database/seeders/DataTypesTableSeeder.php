@@ -181,6 +181,24 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-05-20 13:12:57',
                 'updated_at' => '2023-05-20 15:45:16',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'job_offers',
+                'slug' => 'job-offers',
+                'display_name_singular' => 'Oferta de trabajo',
+                'display_name_plural' => 'Ofertas de trabajos',
+                'icon' => 'voyager-news',
+                'model_name' => 'App\\Models\\JobOffer',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2023-05-26 14:31:03',
+                'updated_at' => '2023-05-26 14:31:03',
+            ),
         ));
         
         

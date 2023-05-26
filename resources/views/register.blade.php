@@ -14,7 +14,7 @@
                     $tab = request('tab') ?? 1
                 @endphp
                 <div class="row">
-                    <div class="col-lg-4 mt-2 mb-tg-0 order-2 order-lg-1">
+                    <div class="col-lg-5 mt-2 mb-tg-0 order-2 order-lg-1">
                         <ul class="nav nav-tabs flex-column">
                             <li class="nav-item" data-aos="fade-up">
                                 <a class="nav-link @if($tab == 1) active show @endif" data-bs-toggle="tab" href="#tab-1">
@@ -30,7 +30,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-8 order-1 order-lg-2" data-aos="zoom-in">
+                    <div class="col-lg-7 order-1 order-lg-2" data-aos="zoom-in">
                         <div class="tab-content">
                             <div class="tab-pane @if($tab == 1) active show @endif" id="tab-1">
                                 {{-- <figure>
@@ -39,7 +39,7 @@
                                 <div style="padding: 20px 10px">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <form class="form-submit" action="{{ route('jobapplications.store') }}" method="post">
+                                            <form class="form-submit" action="{{ route('people.store') }}" method="post">
                                                 @csrf
                                                 <input type="hidden" name="type" value="1">
                                                 <div class="row">
@@ -117,7 +117,7 @@
                                 <div style="padding: 20px 10px">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <form class="form-submit" action="{{ route('jobapplications.store') }}" method="post">
+                                            <form class="form-submit" action="{{ route('people.store') }}" method="post">
                                                 @csrf
                                                 <input type="hidden" name="type" value="2">
                                                 <div class="row">

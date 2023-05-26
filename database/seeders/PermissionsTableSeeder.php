@@ -38,5 +38,6 @@ class PermissionsTableSeeder extends Seeder
         Permission::generateFor('countries');
         Permission::generateFor('states');
         Permission::generateFor('cities');
+        Permission::generateFor('job_offers');
     }
 }

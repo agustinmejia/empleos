@@ -3,23 +3,21 @@
 @section('content')
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-
         <div class="container">
-        <div class="row">
-            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <div>
-                <h1>Bolsa Juvenil de Empleos</h1>
-                <h2>Plataforma de empleos del Gobierno Autónomo Departamental del Beni: Oportunidades laborales y crecimiento profesional para jóvenes. ¡Construye tu futuro con nosotros!</h2>
-                <a href="{{ url('register') }}" class="btn-get-started scrollto"><i class="fa fa-search"></i> Busco empleo</a>
-                <a href="{{ url('register') }}?tab=2" class="btn-get-started scrollto"><i class="fa fa-vcard-o"></i> Busco empleados</a>
-            </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+                <div>
+                    <h1>Bolsa Juvenil de Empleos</h1>
+                    <h2>Plataforma de empleos del Gobierno Autónomo Departamental del Beni. Oportunidades laborales y crecimiento profesional para jóvenes</h2>
+                    <a href="{{ url('register') }}" class="btn-get-started scrollto"><i class="fa fa-edit"></i> Registrarse</a>
+                    <a href="{{ url('search') }}" class="btn-get-started scrollto"><i class="fa fa-search"></i> Buscar empleo</a>
+                </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+                <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
-        </div>
-
     </section><!-- End Hero -->
 
     <main id="main">
@@ -27,95 +25,137 @@
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container">
-
                 <div class="row">
-                <div class="col-lg-6" data-aos="zoom-in">
-                    <img src="assets/img/about.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
-                    <div class="content pt-4 pt-lg-0">
-                    <h3>Conoce más acerda de nosotros</h3>
-                    <br>
-                    <p class="fst-italic">
-                        Descubre oportunidades laborales en la plataforma de empleos del Gobierno Autónomo Departamental del Beni. Encuentra el trabajo ideal o publica tus requerimientos de personal. ¡Impulsa tu carrera y contribuye al desarrollo de nuestra región! Únete hoy y construye un futuro prometedor para nuestro amado Beni.
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-check-circle"></i> Encuentra oportunidades laborales, adquiere experiencia y construye un futuro prometedor. ¡Impulsa tu carrera y crece con nosotros.</li>
-                        {{-- <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li> --}}
-                        <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperd</li>
-                    </ul>
-                    {{-- <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate tera noden carma palorp mades tera.
-                    </p> --}}
+                    <div class="col-lg-6" data-aos="zoom-in">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
+                        <div class="content pt-4 pt-lg-0">
+                        <h3>Conoce más acerda de nosotros</h3>
+                        <br>
+                        <p class="fst-italic">
+                            Descubre oportunidades laborales en la plataforma de empleos del Gobierno Autónomo Departamental del Beni. Encuentra el trabajo ideal o publica tus requerimientos de personal. ¡Impulsa tu carrera y contribuye al desarrollo de nuestra región! Únete hoy y construye un futuro prometedor para nuestro amado Beni.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Encuentra oportunidades laborales, adquiere experiencia y construye un futuro prometedor. ¡Impulsa tu carrera y crece con nosotros.</li>
+                            {{-- <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li> --}}
+                            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperd</li>
+                        </ul>
+                        {{-- <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate tera noden carma palorp mades tera.
+                        </p> --}}
+                        </div>
                     </div>
                 </div>
-                </div>
-
             </div>
         </section>
         <!-- End About Section -->
 
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container">
-
+        <!-- ======= Counts Section ======= -->
+        <section id="counts" class="counts">
+            <div class="container" data-aos="fade-up">
                 <div class="row">
-                <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
-                    <ul class="nav nav-tabs flex-column">
-                    <li class="nav-item" data-aos="fade-up">
-                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-                        <h4>Modi sit est</h4>
-                        <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                        <h4>Unde praesentium sed</h4>
-                        <p>Voluptas vel esse repudiandae quo excepturi.</p>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                        <h4>Pariatur explicabo vel</h4>
-                        <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="300">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                        <h4>Nostrum qui quasi</h4>
-                        <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
-                    <div class="tab-content">
-                    <div class="tab-pane active show" id="tab-1">
-                        <figure>
-                        <img src="assets/img/features-1.png" alt="" class="img-fluid">
-                        </figure>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count-box">
+                            <i class="fa fa-group"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="{{ App\Models\Person::where('type', 2)->count() }}" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Personas registradas</p>
+                        </div>
                     </div>
-                    <div class="tab-pane" id="tab-2">
-                        <figure>
-                        <img src="assets/img/features-2.png" alt="" class="img-fluid">
-                        </figure>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="count-box">
+                            <i class="fa fa-home"></i>
+                            @php
+                                $count = App\Models\Person::where('type', 2)->count();
+                            @endphp
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $count > 0 ? $coutn : 5 }}" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Empresas registradas</p>
+                        </div>
                     </div>
-                    <div class="tab-pane" id="tab-3">
-                        <figure>
-                        <img src="assets/img/features-3.png" alt="" class="img-fluid">
-                        </figure>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="bi bi-journal-richtext"></i>
+                            @php
+                                $count = App\Models\JobOffer::where('deleted_at', NULL)->count();
+                            @endphp
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $count > 0 ? $coutn : 12 }}" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Ofertas laborales</p>
+                        </div>
                     </div>
-                    <div class="tab-pane" id="tab-4">
-                        <figure>
-                        <img src="assets/img/features-4.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="fa fa-handshake-o"></i>
+                            @php
+                                $count = App\Models\JobApplication::where('deleted_at', NULL)->count();
+                            @endphp
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $count > 0 ? $coutn : 7 }}" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Personas beneficiadas</p>
+                        </div>
                     </div>
                 </div>
-                </div>
-
             </div>
         </section>
+        <!-- End Counts Section -->
+
+        <!-- ======= Features Section ======= -->
+        {{-- <section id="features" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
+                        <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item" data-aos="fade-up">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                            <h4>Modi sit est</h4>
+                            <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                            <h4>Unde praesentium sed</h4>
+                            <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                            <h4>Pariatur explicabo vel</h4>
+                            <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="300">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                            <h4>Nostrum qui quasi</h4>
+                            <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
+                        <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <figure>
+                            <img src="assets/img/features-1.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <figure>
+                            <img src="assets/img/features-2.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <figure>
+                            <img src="assets/img/features-3.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                            <figure>
+                            <img src="assets/img/features-4.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
         <!-- End Features Section -->
 
         <!-- ======= Services Section ======= -->
